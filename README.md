@@ -59,16 +59,16 @@ For checking the ATOM pointer tables after manually moving/modifying them, compi
 header file atombios.h contains valuable information about the structure of most ATOM objects
 5. [netkas thread](http://forum.netkas.org/index.php/topic,10827.0.html)
 about how to modify port mapping in assembly code
-6a. [radeon_bios_decode and redsock_bios_decoder](https://github.com/JogleLew/amd-framebuffer-utility/blob/master/AMDFramebufferUtility/)
-6b. [radeon_bios_decode with hotplug id output](https://www.tonymacx86.com/threads/radeon-compatibility-guide-ati-amd-graphics-cards.171291/)
+6. [radeon_bios_decode and redsock_bios_decoder](https://github.com/JogleLew/amd-framebuffer-utility/blob/master/AMDFramebufferUtility/)
+7. [radeon_bios_decode with hotplug id output](https://www.tonymacx86.com/threads/radeon-compatibility-guide-ati-amd-graphics-cards.171291/)
 get information about port mappings in a VBIOS file
-7. [Red BIOS Editor](https://www.igorslab.de/en/red-bios-editor-and-morepowertool-adjust-and-optimize-your-vbios-and-even-more-stable-overclocking-navi-unlimited/3/)
+8. [Red BIOS Editor](https://www.igorslab.de/en/red-bios-editor-and-morepowertool-adjust-and-optimize-your-vbios-and-even-more-stable-overclocking-navi-unlimited/3/)
 tune clock settings (transferring the PowerPlayInfo to a VIBOS accepted by RBE, editing it and finally transfer the edited PowerPlayInfo back to the target VBIOS),
 can be used in macOS by means of wine
-8. [Polaris BIOS Editor](http://polaris-bios-editor.eu/)
+9. [Polaris BIOS Editor](http://polaris-bios-editor.eu/)
 mainly helpful for quickly inspecting the VRAM_Info ATOM object and for correcting the checksum after manual modifications,
 doesn't run in wine, so Windows only
-9. [UEFIRomExtract](https://github.com/andyvand/UEFIRomExtract)
+10. [UEFIRomExtract](https://github.com/andyvand/UEFIRomExtract)
 can be used to extract and decompress GOP or CoreEG2 EFI drivers from a VBIOS file
 
 ## Credits
