@@ -2,21 +2,21 @@
 
 How to create an EFI boot screen vBIOS for Apple Late 2009 to Mid 2011 iMac systems using AMD MXM graphics cards
 
-Following the guide of this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of Apple iMac models built in 2009-2011 with MXM slot graphics cards can replace the original ATI mode either with Nvidia or AMD cards. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards.
+Following the guide of this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of Apple iMac models built in 2009-2011 with MXM slot graphics cards can replace the original ATI card either with Nvidia Kepler or mor modern AMD cards. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards.
 This repository decribes tools, sources, methods, and limitations of the current development. 
 
 ## iMac models supported
 
 This repository is limited to this six iMac models published from 2009 to 2011:
 
-iMac10,1 Late 2009 A1312 27 inch
+- iMac10,1 Late 2009 A1312 27 inch
 
-iMac11,1 Late 2009 A1312 27 inch
-iMac11,2 Mid 2010 A1311 21.5 inch
-iMac11,3 Mid 2010 A1312 27 inch
+- iMac11,1 Late 2009 A1312 27 inch
+- iMac11,2 Mid 2010 A1311 21.5 inch
+- iMac11,3 Mid 2010 A1312 27 inch
 
-iMac12,1 Mid 2011 A1311 21.5 inch
-iMac12,2 Mid 2011 A1312 27 inch
+- iMac12,1 Mid 2011 A1311 21.5 inch
+- iMac12,2 Mid 2011 A1312 27 inch
 
 Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards.
 
@@ -24,24 +24,24 @@ Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMa
 
 Currently we have tested these cards and can confirm the method works:
 
-AMD FirePro M5100
-AMD FirePro M6100
-AMD FirePro W5170M
+- AMD FirePro M5100
+- AMD FirePro M6100
+- AMD FirePro W5170M
 
-AMD FirePro W6170M
+- AMD FirePro W6170M
 
-AMD Radeon Pro WX4130
-AMD Radeon Pro WX4150
-AMD Radeon Pro WX4170
+- AMD Radeon Pro WX 4130 mobile
+- AMD Radeon Pro WX 4150 mobile
+- AMD Radeon Pro WX 4170 mobile
 
-AMD Radeon Pro RX480 mobile
-AMD Radeon Pro WX7100 / RX580 mobile
+- AMD Radeon Pro RX 480 mobile
+- AMD Radeon Pro WX 7100 / RX 580 mobile
 
 ## Limitations
 
 This method is limited to graphics card used in Apple systems because it reuses not only drivers on macOS level but also EFI programmes found within the firmware. One can get those firmware parts from updates included in macOS updates or by dumping the firmware from more recent Mac systems. These parts need more space than the GOP driver found in most modern AMD vBIOS versions.
 
-Unfortunately the usable address space for all AMD vBIOS modifications is limited (to my knowledge) to the first 128k when to be used in the iMacs listed above. So we were not able to replace the GOP with the EFI parts and had to cut out not used parts from the vBIOS, which is the VGA driver. So we sacrefice Windows accerelated mode in order to gain an EFI boot picker for macOS only systems. You can use windows in VESA mode for most applications including the tools listed below. 
+Unfortunately the usable address space for all AMD vBIOS modifications is limited (to my knowledge) to the first 128k when to be used in the iMacs listed above. So we were not able to simply replace the GOP with the EFI parts. We had to cut out unused parts from the vBIOS, which is the VGA driver. So we sacreficed Windows accerelated mode in order to gain an EFI boot picker for macOS only systems. You can still use windows in VESA mode for most applications using this vBIOS versions including the tools listed below. 
 
 ## Tools and sources
 
