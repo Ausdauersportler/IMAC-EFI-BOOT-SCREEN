@@ -39,9 +39,11 @@ Currently we have tested these cards and can confirm the method works:
 
 ## Limitations
 
-This method is limited to graphics card used in Apple systems because it reuses not only drivers on macOS level but also EFI programmes found within the firmware. One can get those firmware parts from updates included in macOS updates or by dumping the firmware from more recent Mac systems. These parts need more space than the GOP driver found in most modern AMD vBIOS versions.
+This method is limited to graphics cards used in Apple systems because it reuses not only drivers on macOS level but also EFI programmes found within the firmware. One can get those firmware parts from updates included in macOS updates or by dumping the firmware from more recent Mac systems. Unfortunatley these three parts need more space than the GOP driver found in most modern AMD vBIOS versions.
 
-Unfortunately the usable address space for all AMD vBIOS modifications is limited (to my knowledge) to the first 128k when to be used in the iMacs listed above. So we were not able to simply replace the GOP with the EFI parts. We had to cut out unused parts from the vBIOS, which is the VGA driver. So we sacreficed Windows accerelated mode in order to gain an EFI boot picker for macOS only systems. You can still use windows in VESA mode for most applications using this vBIOS versions including the tools listed below. 
+The usable address space for all AMD vBIOS modifications is limited (to my knowledge) to the first 128k when to be used in the iMacs listed above. So we were not able to simply replace the GOP with the EFI parts. We had to cut out unused parts from the vBIOS, which is the VGA driver. So we sacreficed Windows accerelated mode in order to gain an EFI boot picker for macOS only systems. You can still use windows in VESA mode for most applications using this vBIOS versions including the tools listed below. 
+
+Currently we are no able to change the output of the EFI boot picker. Some versions offer an invisble boot picker, some only on an external display connected via display port and a few on the internal main LCD. All these vBIOS versions either need a miniDisplay emulator plug or an external display just connected.
 
 ## Tools and sources
 
