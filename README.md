@@ -2,7 +2,7 @@
 
 How to create an EFI boot screen vBIOS for Apple Late 2009 to Mid 2011 iMac systems using AMD MXM graphics cards
 
-Following the guide of this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of Apple iMac models built in 2009-2011 with MXM slot graphics cards can replace the original ATI card either with Nvidia Kepler or AMD GCN 1.0 to 4.0 cards. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards at some point where an iMac firmware modifications has been proposed. IMHO this is still the best way to go.
+Following the guide of this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of Apple iMac models built in 2009-2011 with MXM slot graphics cards can replace the original ATI card either with an Nvidia Kepler or an AMD GCN 1.0 to 4.0 card. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards at some point where an iMac firmware modifications has been proposed. IMHO this is still the best way to go. Lately [improvements](https://forums.macrumors.com/threads/imac-2011-maxwell-and-pascal-gpu-upgrade.2300989/post-30017630) have been made to add a NVIDIA Maxwell andPascal card, but please note there are no macOS drivers available in any macOS versions starting with Mojave.
 
 This repository decribes tools, sources, methods, and limitations of the current development. 
 
