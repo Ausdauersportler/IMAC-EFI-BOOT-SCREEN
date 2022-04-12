@@ -19,7 +19,7 @@ This repository is limited to this six iMac models published from 2009 to 2011:
 - iMac12,1 Mid 2011 A1311 21.5 inch
 - iMac12,2 Mid 2011 A1312 27 inch
 
-Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards.
+Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models.
 
 ## AMD graphcis cards supported
 
@@ -30,6 +30,8 @@ Currently we have tested these cards and can confirm the method works:
 - AMD FirePro W5170M
 
 - AMD FirePro W6170M
+- AMD FirePro W7170M 
+- AMD FirePro S7100X
 
 - AMD Radeon Pro WX 4130 mobile
 - AMD Radeon Pro WX 4150 mobile
@@ -51,8 +53,8 @@ Currently we are no able to change the output of the EFI boot picker. Some versi
 1. [ATOMTableResize](https://www.overclock.net/threads/gui-tool-atomtableresize.1686521/)
 Exchange and modify ATOM objects easily, automatically fixing the checksum upon saving - can be used together with "Hex Fiend" by adding the correct path in the file "editor.ini"
 2. [Hex Fiend](https://hexfiend.com/), together with PCI option ROM [template](https://gist.github.com/al3xtjames/b58f22f12bd4952e08c9f30195cc8de6)
-3. [EfiRom](https://github.com/tianocore/edk2)from EDK2
-EfiRom (BaseTools/Source/C/EfiRom) can be compiled for macOS relatively easy but I attached the executable here
+3. [EfiRom](https://github.com/tianocore/edk2) from EDK2
+EfiRom (BaseTools/Source/C/EfiRom) can be compiled for macOS relatively easy.
 Combines compressed EFI drivers and legacy VBIOS part into a VBIOS image ready for flashing
 4. [AtomDis](https://www.phoronix.com/scan.php?page=article&item=amd_atombios_dumper&num=1)
 For checking the ATOM pointer tables after manually moving/modifying them, compiled executable attached,
