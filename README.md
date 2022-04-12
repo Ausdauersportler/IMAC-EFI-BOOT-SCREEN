@@ -8,7 +8,7 @@ This repository decribes tools, sources, methods, and limitations of the current
 
 ## iMac models supported
 
-This repository is limited to this six iMac models published from 2009 to 2011:
+This repository is limited to these six iMac models published from 2009 to 2011:
 
 - iMac10,1 Late 2009 A1312 27 inch
 
@@ -19,7 +19,8 @@ This repository is limited to this six iMac models published from 2009 to 2011:
 - iMac12,1 Mid 2011 A1311 21.5 inch
 - iMac12,2 Mid 2011 A1312 27 inch
 
-Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models.
+Note: 
+It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models.
 
 ## AMD graphcis cards supported
 
@@ -40,31 +41,6 @@ Currently we have tested these cards and can confirm the method works:
 
 - AMD Radeon Pro RX 480 mobile
 - AMD Radeon Pro WX 7100 / RX 580 mobile
-
-## Tools and sources
-
-1. [ATOMTableResize](https://www.overclock.net/threads/gui-tool-atomtableresize.1686521/)
-Exchange and modify ATOM objects easily, automatically fixing the checksum upon saving - can be used together with "Hex Fiend" by adding the correct path in the file "editor.ini"
-2. [Hex Fiend](https://hexfiend.com/), together with PCI option ROM [template](https://gist.github.com/al3xtjames/b58f22f12bd4952e08c9f30195cc8de6)
-3. [EfiRom](https://github.com/tianocore/edk2) from EDK2
-EfiRom (BaseTools/Source/C/EfiRom) can be compiled for macOS relatively easy.
-Combines compressed EFI drivers and legacy VBIOS part into a VBIOS image ready for flashing
-4. [AtomDis](https://www.phoronix.com/scan.php?page=article&item=amd_atombios_dumper&num=1)
-For checking the ATOM pointer tables after manually moving/modifying them, compiled executable attached,
-header file atombios.h contains valuable information about the structure of most ATOM objects
-5. [netkas thread](http://forum.netkas.org/index.php/topic,10827.0.html)
-about how to modify port mapping in assembly code
-6. [radeon_bios_decode and redsock_bios_decoder](https://github.com/JogleLew/amd-framebuffer-utility/blob/master/AMDFramebufferUtility/)
-7. [radeon_bios_decode with hotplug id output](https://www.tonymacx86.com/threads/radeon-compatibility-guide-ati-amd-graphics-cards.171291/)
-get information about port mappings in a VBIOS file
-8. [Red BIOS Editor](https://www.igorslab.de/en/red-bios-editor-and-morepowertool-adjust-and-optimize-your-vbios-and-even-more-stable-overclocking-navi-unlimited/3/)
-tune clock settings (transferring the PowerPlayInfo to a VIBOS accepted by RBE, editing it and finally transfer the edited PowerPlayInfo back to the target VBIOS),
-can be used in macOS by means of wine
-9. [Polaris BIOS Editor](http://polaris-bios-editor.eu/)
-mainly helpful for quickly inspecting the VRAM_Info ATOM object and for correcting the checksum after manual modifications,
-doesn't run in wine, so Windows only
-10. [UEFIRomExtract](https://github.com/andyvand/UEFIRomExtract)
-can be used to extract and decompress GOP or CoreEG2 EFI drivers from a VBIOS file
 
 ## Credits
 
