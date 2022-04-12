@@ -26,9 +26,10 @@ Note: It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMa
 Currently we have tested these cards and can confirm the method works:
 
 - AMD FirePro M5100
-- AMD FirePro M6100
+- AMD FirePro M6000
 - AMD FirePro W5170M
 
+- AMD FirePro M6100
 - AMD FirePro W6170M
 - AMD FirePro W7170M 
 - AMD FirePro S7100X
