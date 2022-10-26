@@ -12,7 +12,7 @@ The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decrib
 
 This repository is limited to these six iMac models published from 2009 to 2011:
 
-- iMac10,1 Late 2009 A1312 27 inch
+- (iMac10,1 Late 2009 A1312 27 inch)
 
 - iMac11,1 Late 2009 A1312 27 inch
 - iMac11,2 Mid 2010 A1311 21.5 inch
