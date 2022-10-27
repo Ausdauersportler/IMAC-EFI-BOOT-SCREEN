@@ -34,16 +34,18 @@ Currently we have tested these cards and can confirm the method works:
 - AMD FirePro W5170M
 
 - AMD FirePro M6100
+- (AMD FirePro W6150M)
 - AMD FirePro W6170M
 - AMD FirePro W7170M 
 - AMD FirePro S7100X
 
-- AMD Radeon Pro WX 4130 mobile
-- AMD Radeon Pro WX 4150 mobile
-- AMD Radeon Pro WX 4170 mobile
+- AMD Radeon Pro WX4130 mobile
+- AMD Radeon Pro WX4150 mobile
+- AMD Radeon Pro WX4170 mobile
 
-- AMD Radeon Pro RX 480 mobile
-- AMD Radeon Pro WX 7100 / RX 580 mobile
+- AMD Radeon Pro RX470 mobile
+- AMD Radeon Pro RX480 mobile
+- AMD Radeon Pro WX7100 mobile
 
 ## Credits
 
