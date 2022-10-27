@@ -6,7 +6,7 @@ My goal is to provide a comprehensive guide how to construct EFI BIOS versions f
 
 Just to complete this introduction: Lately [improvements](https://forums.macrumors.com/threads/imac-2011-maxwell-and-pascal-gpu-upgrade.2300989/post-30017630) have been made to add a NVIDIA Maxwell and Pascal card, but please note there are no macOS drivers available within any macOS versions starting with Mojave, and there is no EFI boot screen support.
 
-The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decribes tools, sources, methods, and limitations of the current development.  
+The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decribes tools, sources, methods, orignal limitations, solutions and state of the current development.  
 
 ## iMac models supported
 
