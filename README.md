@@ -34,7 +34,7 @@ Currently we have tested these cards and can confirm the method works:
 - AMD FirePro W5170M
 
 - AMD FirePro M6100
-- (AMD FirePro W6150M)
+- AMD FirePro W6150M
 - AMD FirePro W6170M
 - AMD FirePro W7170M 
 - AMD FirePro S7100X
@@ -50,3 +50,4 @@ Currently we have tested these cards and can confirm the method works:
 ## Credits
 
 Most knowledge has been gathered by me from contributions made by [Nick [D]vB](https://forums.macrumors.com/members/nick-d-vb.1132239/), [nikey22](https://forums.macrumors.com/members/nikey22.1199855/), and [internetzel](https://forums.macrumors.com/members/internetzel.959462/) who spent some nights to explain everything in detail to me and who has much more patience to dive deeply into this matter than I do. Hope he will join me to fill this repository with contents. Last but not least thanks to [dfranetic](https://github.com/franetic), he finshed what I could not have done. Great team!
+Thanks to [rthpjm](https://forums.macrumors.com/members/rthpjm.535915/) for finding a W6150M and the necessary legacy vBIOS in some HP firmware update.
