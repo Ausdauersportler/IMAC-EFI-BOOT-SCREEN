@@ -46,6 +46,7 @@ Currently we have tested these cards and can confirm the method works:
 - AMD Radeon Pro RX470 mobile
 - AMD Radeon Pro RX480 mobile
 - AMD Radeon Pro WX7100 mobile
+- (AMD Radeon Pro RX5500XT mobile)
 
 ## Credits
 
