@@ -4,7 +4,7 @@ How to create an EFI boot screen vBIOS for Apple Late 2009 to Mid 2011 iMac syst
 
 My goal is to provide a comprehensive guide how to construct EFI BIOS versions for some AMD MXM cards. As described in detail in this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of modular Apple iMac models built in 2009-2011 with MXM slot graphcs card can replace the original ATI card either with an Nvidia Kepler or an AMD GCN 1.0 to 4.0 card. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards at some point where an iMac firmware modification has been proposed. Although the firmware modification is quite simple the adoption rate is frankly speaking zero. IMHO this is still the best way to go. Nevertheless even this method will need a BIOS constructed in the same way as described here within the wiki. 
 
-Just to complete this introduction: Lately [improvements](https://forums.macrumors.com/threads/imac-2011-maxwell-and-pascal-gpu-upgrade.2300989/post-30017630) have been made to add a NVIDIA Maxwell and Pascal card, but please note there are no macOS drivers available within any macOS versions starting with Mojave, and there is no EFI boot screen support.
+Just to complete this introduction: Lately [improvements](https://forums.macrumors.com/threads/imac-2011-maxwell-and-pascal-gpu-upgrade.2300989/post-30017630) have been made to add a NVIDIA Maxwell and Pascal card, but please note there are no macOS drivers available within any macOS versions starting with Mojave, and there is limited EFI boot screen support.
 
 The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decribes tools, sources, methods, orignal limitations, solutions and state of the current development.  
 
@@ -21,8 +21,11 @@ This repository is limited to these six iMac models published from 2009 to 2011:
 - iMac12,1 Mid 2011 A1311 21.5 inch
 - iMac12,2 Mid 2011 A1312 27 inch
 
-Note: 
-It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models.
+Notes: 
+
+It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models. 
+
+Could suscessfully EG2 modifiy the iMac10,1 firmware, but got a white screen and no fully POST with ED2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480.
 
 ## AMD graphcis cards supported
 
