@@ -23,9 +23,11 @@ This repository is limited to these six iMac models published from 2009 to 2011:
 
 Notes: 
 
-It might be possible to inlcude the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. But I never had the chance to work with these two older models. 
+1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. Unfortunately both needs different modifications to enable the internal screen. Never had the chance to work with these two older models. 
 
-Could suscessfully EG2 modifiy the iMac10,1 firmware, but got a white screen and no fully POST with ED2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480.
+2. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480.
+
+3. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2.
 
 ## AMD graphcis cards supported
 
@@ -49,7 +51,7 @@ Currently we have tested these cards and can confirm the method works:
 - AMD Radeon Pro RX470 mobile
 - AMD Radeon Pro RX480 mobile
 - AMD Radeon Pro WX7100 mobile
-- (AMD Radeon Pro RX5500XT mobile)
+- AMD Radeon Pro RX5500XT mobile
 
 ## Credits
 
