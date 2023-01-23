@@ -27,7 +27,7 @@ Notes:
 
 2. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480.
 
-3. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2. And it is possible to inject a modified vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control.
+3. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2. And it is possible to inject a modified vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey.
 
 ## AMD graphcis cards supported
 
