@@ -59,4 +59,4 @@ Most knowledge has been gathered by me from contributions made by [Nick [D]vB](h
 
 Thanks to [rthpjm](https://forums.macrumors.com/members/rthpjm.535915/) for finding a W6150M and the necessary legacy vBIOS in some HP firmware update. Special thanks to [edwardgeo](https://forums.macrumors.com/members/edwardgeo.1274066/) for countless ideas and incredible knowledge about indepth AMD vBIOS modifications. All the best if these dark times!
 
-Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop] usable for both MacPro and modular iMacs using both Nvidia or AMD graphics cards to enable the EFI boot picker. 
+Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop](https://github.com/mikebeaton/OpenCorePkg/tree/enable-gop/Staging/EnableGop) usable for both MacPro and modular iMacs using either Nvidia or AMD graphics cards to enable the EFI boot picker. 
