@@ -12,8 +12,7 @@ The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decrib
 
 This repository is limited to these eight iMac models published from 2009 to 2011:
 
-- iMac9,1 Early 2009 A1225 24 inch (LVDS)
-(only [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions came with compatible MXM3 Slots)
+- iMac9,1 Early 2009 A1225 24 inch (LVDS) (see note 1)
 - iMac10,1 Late 2009 A1311 21.5 inch (LVDS)
 
 - iMac10,1 Late 2009 A1312 27 inch
@@ -27,7 +26,7 @@ This repository is limited to these eight iMac models published from 2009 to 201
 
 Notes: 
 
-1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. Both systems were equipped with MXM slots and MXM graphics cards. Unfortunately both needs different modifications to enable the internal screen. Best cards to test will be M4000 and M5100.
+1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and MXM3 graphics cards (GT120, GT130, AMD 4850). Best cards to test will be the AMD M4000 and AMD M5100.
 
 2. After some investigation we found that the M4000 and M5100 cards were delivered with LVDS, but not Apple compatible vBIOS versions. With an OpenCore connector patch the M4000 could be enabled with macOS up to Monterey!
 
