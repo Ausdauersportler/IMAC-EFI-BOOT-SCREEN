@@ -10,9 +10,13 @@ The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decrib
 
 ## iMac models supported
 
-This repository is limited to these six iMac models published from 2009 to 2011:
+This repository is limited to these eight iMac models published from 2009 to 2011:
 
-- (iMac10,1 Late 2009 A1312 27 inch)
+- iMac9,1 Early 2009 A1225 24 inch (LVDS)
+(only [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions came with compatible MXM3 Slots)
+- iMac10,1 Late 2009 A1311 21.5 inch (LVDS)
+
+- iMac10,1 Late 2009 A1312 27 inch
 
 - iMac11,1 Late 2009 A1312 27 inch
 - iMac11,2 Mid 2010 A1311 21.5 inch
@@ -23,11 +27,13 @@ This repository is limited to these six iMac models published from 2009 to 2011:
 
 Notes: 
 
-1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch and iMac10,1 Mid 2009 A3111 21,5 inch model to this list. Both systems were equipped with MXM slots and MXM graphics cards. Unfortunately both needs different modifications to enable the internal screen. Never had the chance to work with these two older models. 
+1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. Both systems were equipped with MXM slots and MXM graphics cards. Unfortunately both needs different modifications to enable the internal screen. Best cards to test will be M4000 and M5100.
 
-2. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480.
+2. After some investigation we found that the M4000 and M5100 cards were delivered with LVDS, but not Apple compatible vBIOS versions. With an OpenCore connector patch the M4000 could be enabled with macOS up to Monterey!
 
-3. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2. And it is possible to inject a modified vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey.
+3. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480 on iMac10,1.
+
+4. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2. And it is possible to inject a modified vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey.
 
 ## AMD graphcis cards supported
 
