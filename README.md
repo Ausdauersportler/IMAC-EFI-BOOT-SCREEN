@@ -13,7 +13,7 @@ The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decrib
 This repository is limited to these eight iMac models published from 2009 to 2011:
 
 - iMac9,1 Early 2009 A1225 24 inch (LVDS) (see note 1)
-- iMac10,1 Late 2009 A1311 21.5 inch (LVDS)
+- iMac10,1 Late 2009 A1311 21.5 inch (LVDS) (see note 2)
 
 - iMac10,1 Late 2009 A1312 27 inch
 
@@ -28,7 +28,7 @@ Notes:
 
 1. It might be possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and MXM3 graphics cards (GT120, GT130, AMD 4850). Best cards to test will be the AMD M4000 and AMD M5100.
 
-2. After some investigation we found that the M4000 and M5100 cards were delivered with LVDS, but not Apple compatible vBIOS versions. With an OpenCore connector patch the M4000 could be enabled with macOS up to Monterey!
+2. After some investigation we found that the M4000 and M5100 cards were delivered with LVDS, but not Apple compatible vBIOS versions. With an OpenCore [connector patch](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki/LVDS) the M4000 could be enabled with macOS up to Monterey!
 
 3. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480 on iMac10,1.
 
