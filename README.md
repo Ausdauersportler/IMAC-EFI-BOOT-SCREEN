@@ -28,7 +28,7 @@ Notes:
 
 1. Finally it was possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and MXM3 graphics cards (GT120, GT130, AMD 4850). Best cards to run will be the AMD M4000 and AMD M5100, W5170M and M6000 can be modified, too.
 
-2. After some investigation we found the M4000 and M5100 cards were delivered with LVDS support, but not Apple compatible vBIOS versions. Very likely more recent GCN4 cards to not support LVDS any longer. 
+2. After some investigation we found the M4000 and M5100 cards were delivered with LVDS support, but not Apple compatible vBIOS versions. Very likely more recent GCN4 cards do not support LVDS any longer. 
 
 3. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480 on iMac10,1.
 
