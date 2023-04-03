@@ -4,6 +4,7 @@ Additionally it will show the EFI boot picker when pressing alt/option on all li
 This iMac9,1 is limited by an older firmware version.
 
 Files containing the LVDS string are meant for both LVDS systems: iMac9,1 24" and iMac10,1 21.5" 
+All other files are optimized for eDP connected internal displays as found in the other iMac10,1 to iMac12,2 models.
 
 Some files contain names like Elpida, Samsung, and Hynix (VRAM manufacturing companies). 
 Hynix memory comes on two different flavors, AFR and BFR.
