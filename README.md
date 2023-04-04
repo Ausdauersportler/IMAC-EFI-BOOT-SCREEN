@@ -68,3 +68,8 @@ Thanks to [rthpjm](https://forums.macrumors.com/members/rthpjm.535915/) for find
 [m0bil](https://forums.macrumors.com/members/m0bil.1235134/) has become the expert for all NVIDIA modifications and probably he should start a similar repository about it and more importantly to this project he is the undisputed master of all iMac firmware modifications.
 
 Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop](https://github.com/mikebeaton/OpenCorePkg/tree/enable-gop/Staging/EnableGop) usable for both MacPro and modular iMacs using either Nvidia or AMD graphics cards to enable the EFI boot picker. 
+
+## Support
+
+If you want to support the AMD (i)Mac vBIOS development [donations](https://www.paypal.com/paypalme/Ausdauersportler) are greatly appreciated.
+
