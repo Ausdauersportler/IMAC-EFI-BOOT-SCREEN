@@ -17,3 +17,5 @@ All file names begin with the graphics card marketing name chosen by the vendor,
 Since not all GPU chips are really identcial (binning ) some cards may run with higher VRAM or core clock speed settings. 
 We usually did not change those value to avoid any stability issues. 
 But we cannot guarantee you got a card running well with vBIOS versions provided here.
+
+The recent version of the EnableGop driver is V1.2 - I will update all vBIOS files during the next days and in future only provide updates if serious issues will be fixed. So far - as iMacs are concerned - no such issues are known.
