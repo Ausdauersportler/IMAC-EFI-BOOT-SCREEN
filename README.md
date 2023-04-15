@@ -1,6 +1,6 @@
 # IMAC-EFI-BOOT-SCREEN
 
-How to create an EFI boot screen vBIOS for Apple Late 2009 to Mid 2011 iMac systems using AMD MXM graphics cards
+How to create an EFI boot screen vBIOS for Apple 2009 to Mid 2011 iMac systems using AMD MXM3 graphics cards
 
 My goal is to provide a comprehensive guide how to construct EFI BIOS versions for some AMD MXM cards. As described in detail in this [thread](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/post-17425857) owners of modular Apple iMac models built in 2009-2011 with MXM slot graphcs card can replace the original ATI card either with an Nvidia Kepler or an AMD GCN 1.0 to 4.0 card. While there has been a lot of success offering an EFI boot screen with NVIDIA cards development stuck with the AMD cards at some point where an iMac firmware modification has been proposed. Although the firmware modification is quite simple the adoption rate is frankly speaking zero. IMHO this is still the best way to go. Nevertheless even this method will need a BIOS constructed in the same way as described here within the wiki. 
 
@@ -31,7 +31,7 @@ Notes:
 
 2. After some investigation we found the M4000 and M5100 cards were delivered with LVDS support, but not Apple compatible vBIOS versions. Very likely more recent GCN4 cards do not support LVDS any longer. 
 
-3. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480 on iMac10,1.
+3. Could suscessfully EG2 modifiy the iMac10,1 A1312 firmware, but got a white screen and no fully POST with EG2_adj versions (boot screen on internal LCD) while the unadjusted Venus versions provided a working EFI boot screen on an external display. This is confusing. Same white screen with RX480 on 27 iMac10,1.
 
 4. RX5500XT does not allow legacy BIOS modifications, but adding a EG2 replacement for the AMD GOP still works as designed. First replacement card which enables both external display on iMac12,2. And it is possible to inject a modified vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey. Finally adding the EnableGop driver brought back EFI boot screen support.
 
@@ -47,6 +47,7 @@ Currently we have tested these cards and can confirm the method works:
 - AMD FirePro M6100
 - AMD FirePro W6150M
 - AMD FirePro W6170M
+
 - AMD FirePro W7170M 
 - AMD FirePro S7100X
 
