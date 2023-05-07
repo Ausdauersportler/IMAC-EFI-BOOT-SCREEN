@@ -1,3 +1,5 @@
+All vBIOS versions uploaded here are created to use in Apple iMac models, only. No support for any PC laptops here.
+
 Tried to use speaking file names to avoid confusion after downloading multiple files from this and other folders in this repository.
 Files containing EnableGop contain the OpenCore EnableGop driver and will enable backlight on all iMacs.
 Additionally it will show the EFI boot picker when pressing alt/option on all listed iMac models with one notable exception, the iMac9.1.
