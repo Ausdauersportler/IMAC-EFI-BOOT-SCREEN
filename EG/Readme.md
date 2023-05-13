@@ -1,9 +1,9 @@
 All vBIOS versions uploaded here are created to use in Apple iMac models, only. No support for any PC laptops here.
 
 Tried to use speaking file names to avoid confusion after downloading multiple files from this and other folders in this repository.
-Files containing EnableGop contain the OpenCore EnableGop driver and will enable backlight on all iMacs.
-Additionally it will show the EFI boot picker when pressing alt/option on all listed iMac models with one notable exception, the iMac9.1.
-This iMac9,1 is limited by an older firmware version.
+Files containing the EnableGop string use the OpenCore EnableGop driver and will enable backlight on power on and show the EFI boot picker when pressing alt/option on all listed iMac models!
+
+The iMac9.1 limited by an older and different firmware version needed a modified version of the EnableGop driver. I managed to get it working and now we support all ever manufactured Mac desktop systesm with MXM3 slots. The vBIOS versions are labeled as with EnableGop91 as part of the file name. 
 
 Files containing the LVDS string are meant for both LVDS systems: iMac9,1 24" and iMac10,1 21.5" 
 All other files are optimized for eDP connected internal displays as found in the other iMac10,1 to iMac12,2 models.
