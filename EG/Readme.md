@@ -16,8 +16,9 @@ If the normal version causes problems try the ALT version.
 
 All file names begin with the graphics card marketing name chosen by the vendor, i.e. WX4130 (AMD Radeon Pro WX 4130).
 
-Since not all GPU chips are really identcial (binning ) some cards may run with higher VRAM or core clock speed settings. 
-We usually did not change those values to avoid any stability issues. 
+Since not all GPU chips are really identcial (binning ) some cards may run with higher VRAM or core clock speed settings. The WX4170 versions are forcing such higher clock speeds. If you experience any form of instability use the slightly lower clocked WX4150 versions, instead. One cannot change the GPU chip characteristics after production.
+
+We usually did not change power, voltage or clock settings to avoid any stability issues. 
 But we cannot guarantee you got a card running well with vBIOS versions provided here.
 
-The recent version of the EnableGop driver is V1.2 - I will update all vBIOS files during the next days and in future only provide updates if serious issues will be fixed. So far - as iMacs are concerned - no such issues are known.
+The recent version of the EnableGop driver is V1.3 - I will update all vBIOS files during the next days and in future only provide updates if serious issues will be fixed. So far - as iMacs are concerned - no such issues are known. Each card works well even with the 1.1 release.
