@@ -6,7 +6,7 @@ Files containing the EnableGop string use the OpenCore EnableGop driver and will
 The iMac9.1 limited by an older and different firmware version needed a modified version of the EnableGop driver. I managed to get it working and now we support all ever manufactured Mac desktop systesm with MXM3 slots. The vBIOS versions are labeled as with EnableGop91 as part of the file name. 
 
 Files containing the LVDS string are meant for both LVDS systems: iMac9,1 24" and iMac10,1 21.5" 
-All other files are optimized for eDP connected internal displays as found in the other iMac10,1 to iMac12,2 models.
+All other files are optimized for eDP connected internal displays as found in the iMac10,1 27 inch, all iMac11,x and iMac12,x models.
 
 Some files contain names like Elpida, Samsung, and Hynix (VRAM manufacturing companies). 
 Hynix memory comes on two different flavors, AFR and BFR.
@@ -16,7 +16,7 @@ If the normal version causes problems try the ALT version.
 
 All file names begin with the graphics card marketing name chosen by the vendor, i.e. WX4130 (AMD Radeon Pro WX 4130).
 
-Since not all GPU chips are really identcial (binning ) some cards may run with higher VRAM or core clock speed settings. The WX4170 versions are forcing such higher clock speeds. If you experience any form of instability use the slightly lower clocked WX4150 versions, instead. One cannot change the GPU chip characteristics after production.
+Since not all GPU chips are really identical (binning ) some cards may run with higher VRAM or core clock speed settings. The WX4170 versions are forcing such higher clock speeds. If you experience any form of instability use the slightly lower clocked WX4150 versions, instead. One cannot change the GPU chip characteristics after production.
 
 We usually did not change power, voltage or clock settings to avoid any stability issues. 
 But we cannot guarantee you got a card running well with vBIOS versions provided here.
