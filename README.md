@@ -27,13 +27,13 @@ This repository is limited to these eight iMac models published from 2009 to 201
 
 Notes: 
 
-1. Finally it was possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and non metal graphics cards (GT120, GT130, AMD 4850). Best cards to run aree the AMD M4000 and AMD M5100, both W5170M and M6000. The power hungry Saturn cards M6100 and W6170M will over heat the system under load rapidly. This system needs a special EnableGop91 driver. All vBIOS files are marked aka named like this and include the LVDS string, too.
+1. Finally it was possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and non metal graphics cards (GT120, GT130, AMD 4850). Best cards to use are the AMD FirePro M4000, M5100, W5170M, and M6000. The power hungry Saturn cards M6100 and W6170M/W6150M will over heat the system under load rapidly. This system needs a special EnableGop91 driver. All vBIOS files are marked aka named like this and include the LVDS string, too.
 
-2. GCN4 cards do not support LVDS, the necessary hardware logic to support LVDS on these cards is simply missing. vBIOS files contain the string LVDS, but not the EnableGop91 marker (see note 1)
+2. GCN4 cards do not support LVDS, the necessary hardware logic to support LVDS on these cards is simply missing. vBIOS file names contain the string LVDS, but not the EnableGop91 string (see note 1)
 
 3. EG2 versions of vBIOS do not run on iMac10,1 A1312 systems, you get only a white screen in power on/boot. EG versions support all types of Macs listed.
 
-4. Althout one cannot modify the legacy part of the vBIOS it is possible to inject a modified legacy vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey. This mod does not apply or work with Windows installations. Adding the EnableGop driver brought back EFI boot screen support. First replacement card which enables both external display connectors on iMac12,2. 
+4. Althout one cannot modify the legacy part of the vBIOS it is possible to inject a modified legacy vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey. This mod does not apply or work with any Windows installation. Adding the EnableGop driver brought back EFI boot screen support. First and only replacement card which enables both external display connectors on iMac12,2. 
 
 ## AMD graphcis cards supported
 
@@ -75,5 +75,5 @@ Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who develope
 
 ## Support
 
-If you want to support the AMD (i)Mac vBIOS development [donations](https://www.paypal.com/paypalme/Ausdauersportler) are greatly appreciated.
+If you want to support the AMD (i)Mac vBIOS development or just buy me a coffee [donations](https://www.paypal.com/paypalme/Ausdauersportler) are greatly appreciated.
 
