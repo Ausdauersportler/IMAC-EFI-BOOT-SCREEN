@@ -13,7 +13,7 @@ The [wiki](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki) decrib
 
 This repository is limited to these eight iMac models published from 2009 to 2011:
 
-- iMac9,1 Early 2009 A1225 24 inch (LVDS) (see note 1)
+- iMac9,1 Early 2009 A1225 24 inch (LVDS) (using a modified EnableGop9,1 driver, see note 1)
 - iMac10,1 Late 2009 A1311 21.5 inch (LVDS) (see note 2)
 
 - iMac10,1 Late 2009 A1312 27 inch (eDP, see note 3 about EG2)
@@ -27,9 +27,9 @@ This repository is limited to these eight iMac models published from 2009 to 201
 
 Notes: 
 
-1. Finally it was possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and non metal graphics cards (GT120, GT130, AMD 4850). Best cards to use are the AMD FirePro M4000, M5100, W5170M, and M6000. The power hungry Saturn cards M6100 and W6170M/W6150M will over heat the system under load rapidly. This system needs a special EnableGop91 driver. All vBIOS files are marked aka named like this and include the LVDS string, too.
+1. Finally it was possible to include the iMac9,1 Mid 2009 A1225 24 inch to this list. The [2.93 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-3.06-24-inch-aluminum-early-2009-specs.html) and [3.06 GHz](https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.93-24-inch-aluminum-early-2009-specs.html) versions were equipped with MXM3 slots and non metal graphics cards (GT120, GT130, AMD 4850). Best cards to use are the AMD FirePro M4000, M5100, W5170M, and M6000. The power hungry Saturn cards M6100 and W6170M/W6150M will over heat the system under load rapidly. This system needs a special EnableGop91 driver. All vBIOS files are marked aka named like this and include the LVDS string, too. Some more recent NVIDIA MXM3 cards may still have LVDS signaling support and therfore may work with these iMac9,1 system, too (never tested).
 
-2. GCN4 cards do not support LVDS, the necessary hardware logic to support LVDS on these cards is simply missing. vBIOS file names contain the string LVDS, but not the EnableGop91 string (see note 1)
+2. vBIOS file names contain the string LVDS, but not show the EnableGop91 string (see note 1). Unfortunately all more recent AMD GPUS starting the the Polaris/GCN4 architecture lack LVDS signaling hardware support. Therefore you cannot get those cards to display the boot screen unless you connect the internal display using a third party display driver board the external DP port - making it an externally connected display.
 
 3. EG2 versions of vBIOS do not run on iMac10,1 A1312 systems, you get only a white screen in power on/boot. EG versions support all types of Macs listed.
 
@@ -71,7 +71,7 @@ Thanks to [rthpjm](https://forums.macrumors.com/members/rthpjm.535915/) for find
 
 [m0bil](https://forums.macrumors.com/members/m0bil.1235134/) has become the expert for all NVIDIA modifications and probably he should start a similar repository about it and more importantly to this project he is the undisputed master of all iMac firmware modifications.
 
-Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop](https://github.com/mikebeaton/OpenCorePkg/tree/enable-gop/Staging/EnableGop) usable for both MacPro and modular iMacs using either Nvidia or AMD graphics cards to enable the EFI boot picker. 
+Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop](https://github.com/mikebeaton/OpenCorePkg/tree/master/Staging/EnableGop) usable for both MacPro5,1 and modular iMacs as listed above using either Nvidia or AMD graphics cards to enable the EFI boot picker. I had to modify this driver a little bit to make it work on the older (LVDS) iMac9,1 model. This change has not been included into the EnableGop source tree and you need to get the driver named EnableGop91 compiled from this page. It works as desigend, with AMD and likely with NVIDIA cards as well.
 
 ## Support
 
