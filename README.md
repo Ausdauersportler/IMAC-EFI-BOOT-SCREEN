@@ -63,13 +63,17 @@ Currently we have tested these cards and can confirm the method works with:
 
 - AMD Radeon Pro RX5500XT mobile (see note 4 above)
 
+## Hardware upgrade (wiki)
+
+You will find an [overwiew](https://github.com/Ausdauersportler/IMAC-EFI-BOOT-SCREEN/wiki/WWWW) which card works in which iMac and how to start the upgrade project and some more hardware related information about minor soldering tasks needed for a few cards to make them fully compatible in a newly added hardware section.
+
 ## Credits
 
-Most knowledge has been gathered by me from contributions made by [Nick [D]vB](https://forums.macrumors.com/members/nick-d-vb.1132239/), [nikey22](https://forums.macrumors.com/members/nikey22.1199855/), and [internetzel](https://forums.macrumors.com/members/internetzel.959462/) who spent some nights to explain everything in detail to me and who has much more patience to dive deeply into this matter than I do. Hope he will join me to fill this repository with contents. Last but not least thanks to [dfranetic](https://github.com/franetic), he finished what I could not have done. Great team!
+Most knowledge has been gathered by me from contributions made by [Nick [D]vB](https://github.com/iMacGFX), [nikey22](https://github.com/nikey22), and [internetzel](https://github.com/internetzel) who spent some nights to explain everything in detail to me and who has much more patience to dive deeply into this matter than I do. Hope he will join me to fill this repository with contents. Last but not least thanks to [dfranetic](https://github.com/franetic), he finished what I could not have done. Great team!
 
 Thanks to [rthpjm](https://forums.macrumors.com/members/rthpjm.535915/) for finding a W6150M and the necessary legacy vBIOS in some HP firmware update. Special thanks to [edwardgeo](https://forums.macrumors.com/members/edwardgeo.1274066/) for countless ideas and incredible knowledge about indepth AMD vBIOS modifications. All the best if these dark times!
 
-[m0bil](https://forums.macrumors.com/members/m0bil.1235134/) has become the expert for all NVIDIA modifications and probably he should start a similar repository about it and more importantly to this project he is the undisputed master of all iMac firmware modifications.
+[m0bil](https://github.com/m0bil) has become the expert for all NVIDIA modifications and probably he should start a similar repository about it and more importantly to this project he is the undisputed master of all iMac firmware modifications.
 
 Finally many thanks to [Mike Beaton](https://github.com/mikebeaton) who developed an EFI driver named [EnableGop](https://github.com/mikebeaton/OpenCorePkg/tree/master/Staging/EnableGop) usable for both MacPro5,1 and modular iMacs as listed above using either Nvidia or AMD graphics cards to enable the EFI boot picker. I had to modify this driver a little bit to make it work on the older (LVDS) iMac9,1 model. This change has not been included into the EnableGop source tree and you need to get the driver named EnableGop91 compiled from this page. It works as desigend, with AMD and likely with NVIDIA cards as well.
 
