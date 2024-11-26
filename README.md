@@ -33,7 +33,9 @@ Notes:
 
 3. EG2 versions of vBIOS do not run on iMac10,1 A1312 systems, you get only a white screen in power on/boot. EG versions support all types of Macs listed.
 
-4. Althout one cannot modify the legacy part of the vBIOS it is possible to inject a modified legacy vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey. This mod does not apply or work with any Windows installation. Adding the EnableGop driver brought back EFI boot screen support. First and only replacement card which enables both external display connectors on iMac12,2. 
+4. Althout one cannot modify the legacy part of the vBIOS it is possible to inject a modified legacy vBIOS (the first 64K of it) using an SSDT or OpenCore DeviceProperties (ATY,bin_image) to enable the backlight control on Big Sur and Monterey. This mod does not apply or work with any Windows installation. Adding the EnableGop driver brought back EFI boot screen support. First and only replacement card which enables both external display connectors on iMac12,2.
+
+5. Same method as described above enables virtual brightness control on RX6600M. Although values in ioreg and NVRAM are changed the brightness of the display itself does not change, probably because MXM PINS 23,25,27 are not connected as described in this [video](https://www.bilibili.com/video/BV1Ec411d7z6). Additionally the GOP driver has to be patched with the [Syncretic tool](https://forums.macrumors.com/threads/amd-radeon-rx-6800-xt-6900-xt-for-macos.2262295/page-36?post=31039294#post-31039294). Unfortunately neither EnableGop not OpenCore are able to switch on the internal backlight, so the display comes to life late at the login screen. 
 
 ## AMD graphcis cards supported
 
@@ -62,6 +64,7 @@ Currently we have tested these cards and can confirm the method works with:
 - AMD Radeon Pro WX7100 mobile
 
 - AMD Radeon Pro RX5500XT mobile (see note 4 above)
+- AMD Radeon Pro RX6600M mobile (see note 5 above)
 
 ## Hardware upgrade (wiki)
 
