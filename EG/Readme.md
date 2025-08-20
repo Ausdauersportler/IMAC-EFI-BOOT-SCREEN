@@ -21,4 +21,4 @@ Since not all GPU chips are really identical (binning ) some cards may run with 
 We usually did not change power, voltage or clock settings to avoid any stability issues. 
 But we cannot guarantee you got a card running well with vBIOS versions provided here.
 
-The recent version of the EnableGop driver is V1.3 - I will update all vBIOS files during the next days and in future only provide updates if serious issues will be fixed. So far - as iMacs are concerned - no such issues are known. Each card works well even with the 1.1 release.
+The recent version of the EnableGop driver is V1.4 - I may update all vBIOS files in future, but I will only provide such updates if serious issues will be fixed. So far - as iMacs are concerned - no such issues are known. Each card works well even with the first public 1.1 release.
